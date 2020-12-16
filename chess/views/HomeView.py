@@ -1,9 +1,9 @@
-class MainView:
+class HomeView:
     
     def __init__(self):
         pass
 
-    def main_menu(self):
+    def home_menu(self):
         print("====== Bienvenue ======")
         print("Veuillez choisir une option ci dessous:")
         print("1. Gestion des tournois")
