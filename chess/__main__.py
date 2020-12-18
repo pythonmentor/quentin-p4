@@ -3,6 +3,6 @@ from models.Tournament import Tournament
 from controllers.MainController import MainController
 
 if __name__ == "__main__":
-    vue = HomeView()
+    home_view = HomeView()
     controller = MainController()
-    controller.get_choice_main_menu(vue)
+    controller.get_input_main_menu(home_view)

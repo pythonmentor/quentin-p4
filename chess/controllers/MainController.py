@@ -1,14 +1,21 @@
+from controllers.TournamentManagerController import TournamentManagerController
+
 class MainController:
 
     def __init__(self):
-        #self.vue = vue()
-        pass
+        self.running = True
 
-    def get_choice_main_menu(self, vue):
-        choice = vue.home_menu()
-        if choice == "1":
-            print("choix 1")
-        elif choice == "2":
-            print("choix 2")
-        elif choice == "3":
-            print("choix 3")
+    def get_input_main_menu(self, home_view):
+        choice = home_view.home_menu()
+        
+        while self.running:
+            if choice == "1":
+               tournament_management = TournamentManagerController()
+               tournament_management.get_input_tournament_manager()
+            elif choice == "2":
+                pass
+            elif choice == "3":
+                self.running = False
+
+            
+        
