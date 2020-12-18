@@ -16,6 +16,3 @@ class MainController:
                 pass
             elif choice == "3":
                 self.running = False
-
-            
-        

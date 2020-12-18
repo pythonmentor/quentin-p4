@@ -9,9 +9,15 @@ class TournamentManagerController:
         tournament_management = TournamentManagerView()
         management_choice = tournament_management.tournament_manager_view()
 
-        if choice == "1":
+        if management_choice == "1":
+            new_tournament = tournament_management.tournament_creation()
+            if type(new_tournament["name"]) == int:
+                print("Good Job")
+            else:
+                print("nul")
+        elif management_choice == "2":
             pass
-        elif choice == "2":
+        elif management_choice == "3":
             pass
-        elif choice == "3":
-                self.running = False
+
+        exit()

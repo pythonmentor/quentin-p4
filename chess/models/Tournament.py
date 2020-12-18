@@ -10,3 +10,5 @@ class Tournament:
         self.players = None
         self.times_control = None
         self.description = None
+    
+    
